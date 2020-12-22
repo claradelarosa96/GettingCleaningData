@@ -29,7 +29,7 @@ both$Label <- recode(both$Label, `1` = "Walking", `2` = "Walking_upstairs",
                          `3` = "Walking_downstairs", `4` = "Sitting", 
                          `5` = "Standing", `6` = "Laying")
 
-both 
+#both 
 
 
 summ_both <- both %>% group_by(Subject, Label) %>% summarise("Av_mean" = mean(Mean_measures), "Av_sd" = mean(Sd_measures))
